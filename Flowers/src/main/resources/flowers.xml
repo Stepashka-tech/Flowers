@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+< xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.kluneiko.com/flowersxml"
+        xsi:schemaLocation="http://www.kluneiko.com/flowersxml flower.xsd">
+<flowers>
+<flower>
+    <name>Rose</name>
+    <plantСertificate>2023-11</plantСertificate>
+    <soils>
+        <soil>unpaved</soil>
+        <soil>podzolic</soil>
+    </soils>
+    <origin>Persia</origin>
+    <visualParameters>
+        <colorStem>green</colorStem>
+        <colorLeaves>green</colorLeaves>
+        <averageSize>50</averageSize>
+    </visualParameters>
+    <growingTips>
+        <temperature>18-25</temperature>
+        <sunlightRequirement>light-loving</sunlightRequirement>
+        <watering>3500</watering>
+    </growingTips>
+    <multiplyings>
+        <multiplying>stalk</multiplying>
+        <multiplying>seeds</multiplying>
+    </multiplyings>
+</flower>
+
+<flower>
+    <name>Ficus</name>
+    <plantСertificate>2023-11</plantСertificate>
+    <soils>podzolic</soils>
+    <origin>Southeast-Asia</origin>
+    <visualParameters>
+        <colorStem>brown</colorStem>
+        <colorLeaves>green</colorLeaves>
+        <averageSize>60</averageSize>
+    </visualParameters>
+    <growingTips>
+        <temperature>18-25</temperature>
+        <sunlightRequirement>light-loving</sunlightRequirement>
+        <watering>500</watering>
+    </growingTips>
+    <multiplyings>
+        <multiplying>stalk</multiplying>
+        <multiplying>seeds</multiplying>
+    </multiplyings>
+</flower>
+
+<flower>
+    <name>Violet</name>
+    <plantСertificate>2023-11</plantСertificate>
+    <soils>podzolic</soils>
+    <origin>East-Africa</origin>
+    <visualParameters>
+        <colorStem>vinous</colorStem>
+        <colorLeaves>green</colorLeaves>
+        <averageSize>10</averageSize>
+    </visualParameters>
+    <growingTips>
+        <temperature>18-20</temperature>
+        <sunlightRequirement>light-loving</sunlightRequirement>
+        <watering>300</watering>
+    </growingTips>
+    <multiplyings>
+        <multiplying>leaf</multiplying>
+        <multiplying>seeds</multiplying>
+    </multiplyings>
+</flower>
+</flowers>

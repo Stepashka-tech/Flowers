@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.kluneiko.com/flowersxml"
+        xmlns:tns="http://www.kluneiko.com/flowersxml"
+        elementFormDefault="qualified">
+
+
+    <element name="flowers">
+        <complexType>
+            <sequence>
+                <element name="flower" type="tns:Flower" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Flower">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="origin" type="string"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="soil">
+        <sequence>
+            <element name="podzoil" type="string"/>
+            <element name="unpaved" type="string"/>
+            <element name="sod-podzoil" type="string"/>
+        </sequence>
+    </complexType>
+
+    <element name="visualParameters">
+        <complexType>
+            <sequence>
+                <element name="colorStem" type="string"/>
+                <element name="colorLeaves" type="string"/>
+                <element name="averageSize" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="plantСertificate">
+        <sequence>
+            <element name="dateOfIssue" type="gYearMonth"/>
+        </sequence>
+        <attribute name="registration-number" use="required">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="[a-zA-Z]{2,3}[0-9]{5,15}"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+
+
+    <complexType name="growingTips">
+        <sequence>
+            <element name="temperature" type="int"/>
+            <element name="sunlightRequirement" type="string"/>
+            <element name="watering" type="int"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="multiplying">
+        <sequence>
+            <element name="stalk" type="string"/>
+            <element name="seeds" type="string"/>
+            <element name="leaf" type="string"/>
+        </sequence>
+    </complexType>
+
+</schema>
